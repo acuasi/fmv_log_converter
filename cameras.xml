@@ -1,0 +1,26 @@
+<Cameras>
+  <Camera>
+    <name>DJI XT</name>
+    <flen>9</flen>
+    <imgh>480</imgh>
+    <imgw>740</imgw>
+    <senh>8.7</senh>
+    <senw>10.88</senw>
+  </Camera>
+  <Camera>
+    <name>DJI X5 MFT 15mm F/1.7</name>
+    <flen>15</flen>
+    <imgh>3456</imgh>
+    <imgw>4608</imgw>
+    <senh>13</senh>
+    <senw>17.3</senw>
+  </Camera>
+  <Camera>
+    <name>FC300X</name>
+    <flen>3.6</flen>
+    <imgh>4000</imgh>
+    <imgw>3000</imgw>
+    <senh>4.68</senh>
+    <senw>6.28</senw>
+  </Camera>
+</Cameras>

@@ -1,0 +1,88 @@
+MISB Tag,LDS Name,Local metadata heading,Units,Notes  Put your column headings into the third column of the appropriate row.  Do not edit the first column.  Save as a CSV file
+2,UNIX Time Stamp,,Microseconds (integer),"Coordinated Universal Time (UTC) expressed as microseconds since midnight (00:00:00), January 1, 1970. (Unix time stamp multiplied by one million)"
+5,Platform Heading Angle,,Degrees,"Aircraft heading relative to True North, measured clockwise in the horizontal plane looking down.  Compass direction, range 0.0 to 360.0"
+90,Platform Pitch Angle (Full),,Degrees,Aircraft pitch relative to horizontal plane with positive angles for nose above the horizontal plane. 
+91,Platform Roll Angle (Roll),,Degrees,Platform roll angle relative to horizontal plane with positive angles for left wing above the horizontal plane. 
+13,Sensor Latitude,,Degrees,Sensor Latitude. Based on WGS84 ellipsoid.  Range -90.0 to 90.0
+14,Sensor Longitude,,Degrees,Sensor Longitude. Based on WGS84 ellipsoid. Range -180.0 to 180.0
+15,Sensor True Altitude,,Meters,Altitude of sensor as measured from Mean Sea Level (MSL). 
+16,Sensor Horizontal Field of View,,Degrees,Horizontal field of view of selected imaging sensor. 
+17,Sensor Vertical Field of View,,Degrees,Vertical field of view of selected imaging sensor. 
+18,Sensor Relative Azimuth Angle,,Degrees,"Relative angle of sensor pointing direction to platform longitudinal axis as seen from above the platform. Compass direction, range 0.0 to 360.0"
+19,Sensor Relative Elevation Angle,,Degrees,Relative angle of sensor pointing dhirection to the platform horizontal plane. Negative angles down. 
+20,Sensor Relative Roll Angle,,Degrees,Relative roll angle of sensor to aircraft platform. Top of image level is zero degrees. Positive angles are clockwise when looking from behind camera. 
+23,Frame Center Latitude,,Degrees,Latitude of frame center. Based on WGS84 ellipsoid. Range -90.0 to 90.0
+24,Frame Center Longitude,,Degrees,Longitude of frame center. Based on WGS84 ellipsoid. Range -180.0 to 180.0
+25,Frame Center Elevation,,Meters,Terrain elevation at frame center relative to Mean Sea Level (MSL). 
+82,Corner Latitude Point 1 (Full),,Degrees,Latitude for upper left corner of the image frame. Based on WGS84 ellipsoid. Range -90.0 to 90.0
+83,Corner Longitude Point 1  (Full),,Degrees,Longitude for upper left corner of the image frame. Based on WGS84 ellipsoid.  Range -180.0 to 180.0
+84,Corner Latitude Point 2  (Full),,Degrees,Latitude for upper right corner of the image frame. Based on WGS84 ellipsoid. Range -90.0 to 90.0
+85,Corner Longitude Point 2 (Full),,Degrees,Longitude for upper right corner of the image frame. Based on WGS84 ellipsoid.  Range -180.0 to 180.0
+86,Corner Latitude Point 3 (Full),,Degrees,Latitude for lower right corner of the image frame. Based on WGS84 ellipsoid.  Range -90.0 to 90.0
+87,Corner Longitude Point 3 (Full),,Degrees,Longitude for lower right corner of the image frame.  Based on WGS84 ellipsoid. Range -180.0 to 180.0
+88,Corner Latitude Point 4 (Full),,Degrees,Latitude for lower left corner of the image frame. Based on WGS84 ellipsoid.  Range -90.0 to 90.0
+89,Corner Longitude Point 4  (Full),,Degrees,Longitude for lower left corner of the image frame. Based on WGS84 ellipsoid.  Range -180.0 to 180.0
+3,Mission ID,,String,Descriptive Mission Identifier to distinguish event or sortie. Value field is Free Text. Maximum 127 characters.
+4,Platform Tail Number,,String,Identifier of platform. Value field is Free Text. Maximum 127 characters.
+8,Platform True Airspeed,,Meters/Sec,True airspeed (TAS) of platform. Indicated Airspeed adjusted for temperature and altitude. 
+9,Platform Indicated Airspeed,,Meters/Sec,Indicated airspeed (IAS) of platform. Derived from Pitot tube and static pressure sensors. 
+10,Platform Designation,,String,Use Platform Designation String . Value field is Free Text. Maximum 127 characters.
+11,Image Source Sensor,,String,String of image source sensor. Value field is Free Text. Maximum 127 characters.
+12,Image Coordinate System,,String,String of the image coordinate system used. E.g.: 'Geodetic WGS84'
+21,Slant Range,,Meters,Slant range in meters. Distance to center of frame. 
+22,Target Width,,Meters,Target Width within sensor field of view.
+26,Offset Corner Latitude Point 1,,Degrees,"Frame Latitude, offset for upper left corner. Based on WGS84 ellipsoid. Use with Frame Center Latitude."
+27,Offset Corner Longitude Point 1,,Degrees,"Frame Longitude, offset for upper left corner. Based on WGS84 ellipsoid. Use with Frame Center Longitude. "
+28,Offset Corner Latitude Point 2,,Degrees,"Frame Latitude, offset for upper right corner. Based on WGS84 ellipsoid. Use with Frame Center Latitude. "
+29,Offset Corner Longitude Point 2,,Degrees,"Frame Longitude, offset for upper right corner. Based on WGS84 ellipsoid. Use with Frame Center Longitude."
+30,Offset Corner Latitude Point 3,,Degrees,"Frame Latitude, offset for lower right corner. Based on WGS84 ellipsoid. Use with Frame Center Latitude. "
+31,Offset Corner Longitude Point 3,,Degrees,"Frame Longitude, offset for lower right corner. Based on WGS84 ellipsoid. Use with Frame Center Longitude. "
+32,Offset Corner Latitude Point 4,,Degrees,"Frame Latitude, offset for lower left corner. Based on WGS84 ellipsoid. Use with Frame Center Latitude. "
+33,Offset Corner Longitude Point 4,,Degrees,"Frame Longitude, offset for lower left corner. Based on WGS84 ellipsoid. Use with Frame Center Longitude. "
+34,Icing Detected,,None,Flag for icing detected at aircraft location. 
+35,Wind Direction,,Degrees,Wind direction at aircraft location. This is the direction the wind is coming from relative to true north.
+36,Wind Speed,,Meters/Sec,Wind speed at aircraft location. 
+37,Static Pressure,,Millibar,Static pressure at aircraft location. 
+38,Density Altitude,,Meters,Density altitude at aircraft location. 
+39,Outside Air Temperature,,Celcius,Temperature outside of aircraft. 
+40,Target Location Latitude,,Degrees,Calculated Target latitude. This is the crosshair location if different from frame center. Based on WGS84 ellipsoid. 
+41,Target Location Longitude,,Degrees,Calculated Target longitude. This is the crosshair location if different from frame center. Based on WGS84 ellipsoid.
+42,Target Location Elevation,,Meters,Calculated target elevation. This is the crosshair location if different from frame center. 
+43,Target Track Gate Width,,Pixels,Tracking gate width (x value) of tracked target within field of view. Closely tied to source video resolution in pixels.
+44,Target Track Gate Height,,Pixels,Tracking gate height (y value) of tracked target within field of view. Closely tied to source video resolution in pixels.
+45,Target Error Estimate - CE90,,Meters,Circular Error 90 (CE90) is the estimated error distance in the horizontal direction. 
+46,Target Error Estimate - LE90,,Meters,Lateral Error 90 (LE90) is the estimated error distance in the vertical (or lateral) direction.
+47,Generic Flag Data 01,,None,Generic Flagged Metadata Position Format
+49,Differential Pressure,,Millibar,Differential pressure at aircraft location. 
+50,Platform Angle of Attack ,,Degrees,Platform Attack Angle. Angle between platform longitudinal axis and relative wind. Positive angles for upward relative wind. 
+51,Platform Vertical Speed,,Meters/Sec,"Vertical speed of the aircraft relative to zenith. Positive ascending, negative descending. "
+52,Platform Slideslip Angle,,Degrees,"The sideslip angle is the angle between the platform longitudinal axis and relative wind. Positive angles to right wing, neg to left."
+53,Airfield Barometric Pressure,,Millibar,Local pressure at airfield of known height.
+54,Airfield Elevation,,Meters,Elevation of Airfield corresponding to Airfield Barometric Pressure. 
+55,Relative Humidity,,Percent,Relative Humidity at aircraft location.
+56,Platform Ground Speed,,Meters/Sec,Speed projected to the ground of an airborne platform passing overhead.
+57,Ground Range,,Meters,Horizontal distance from ground position of aircraft relative to nadir. Dependent upon Slant Range and Depression Angle.
+58,Platform Fuel Remaining,,Kilogram,Remaining fuel on airborne platform. Metered as fuel weight remaining.
+59,Platform Call Sign,,String,Call Sign of platform or operating unit. Value field is Free Text.
+60,Weapon Load,,None,Codes for current weapons stored on aircraft 
+61,Weapon Fired,,None,Indication when a particular weapon is released. 
+62,Laser PRF Code,,None,A laser's Pulse Repetition Frequency (PRF) code 
+63,Sensor Field of View Name,,String,Name for sensor field of view setting
+64,Platform Magnetic Heading,,Degrees,"Aircraft heading  relative to Magnetic North, measured clockwise in the horizontal plane. Compass direction, range 0.0 to 360.0"
+65,UAS LDS Version Number,,None,Version number of the UAS LS document used to generate a source of UAS LS KLV metadata.
+67,Alternate Platform Latitude,,Degrees,Alternate Platform Latitude. 
+68,Alternate Platform Longitude,,Degrees,Alternate Platform Longitude.
+69,Alternate Platform Altitude,,Meters,Altitude of alternate platform as measured from Mean Sea Level (MSL). 
+70,Alternate Platform Name,,String,Name of alternate platform connected to UAS.
+71,Alternate Platform Heading,,Degrees,Heading angle of alternate platform connected to UAS. 
+72,Event Start Time - UTC,,Microseconds,"Start time expressed as microseconds elapsed since midnight (00:00:00), January 1, 1970. "
+75,Sensor Ellipsoid Height,,Meters,Sensor Ellipsoid Height as measured from the reference WGS84 Ellipsoid.
+76,Alternate Platform Ellipsoid Height,,Meters,Alternate Platform Ellipsoid Height as measured from the reference WGS84 Ellipsoid.
+77,Operational Mode,,None,Indicates the mode of operations of the event portrayed in metadata.
+78,Frame Center Height Above Ellipsoid,,Meters,Frame Center Ellipsoid Height as measured from the reference WGS84 Ellipsoid.
+79,Sensor North Velocity,,Meters/Sec,Northing velocity of the sensor or platform. Positive towards True North 
+80,Sensor East Velocity,,Meters/Sec,Easting velocity of the sensor or platform. Positive towards East. 
+6,Platform Pitch Angle ,,Degrees,Aircraft pitch relative to horizontal plane with positive angles for nose above the horizontal plane. Limited range. 
+7,Platform Roll Angle  ,,Degrees,Platform roll angle relative to horizontal plane with positive angles for left wing above the horizontal plane. Limited range.
+92,Platform Angle of Attack  (Full),,Degrees,Platform Attack Angle. Angle between platform longitudinal axis and relative wind. Positive angles for upward relative wind.
+93,Platform Sideslip Angle  (Full),,Degrees,"Angle between the platform longitudinal axis and relative wind. Positive angles to right wing, neg to left."
