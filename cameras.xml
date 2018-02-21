@@ -23,4 +23,12 @@
     <senh>4.68</senh>
     <senw>6.28</senw>
   </Camera>
+  <Camera>
+    <name>MavicPro_4kx2160</name>
+    <flen>4.7</flen>
+    <imgh>4096</imgh>
+    <imgw>2160</imgw>
+    <senh>6.42</senh>
+    <senw>3.28</senw>
+  </Camera>
 </Cameras>
