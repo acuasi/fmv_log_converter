@@ -2,33 +2,33 @@
   <Camera>
     <name>DJI XT</name>
     <flen>9</flen>
-    <imgh>480</imgh>
     <imgw>740</imgw>
-    <senh>8.7</senh>
+    <imgh>480</imgh>
     <senw>10.88</senw>
+    <senh>8.7</senh>
   </Camera>
   <Camera>
     <name>DJI X5 MFT 15mm F/1.7</name>
     <flen>15</flen>
-    <imgh>3456</imgh>
     <imgw>4608</imgw>
-    <senh>13</senh>
+    <imgh>3456</imgh>
     <senw>17.3</senw>
+    <senh>13</senh>
   </Camera>
   <Camera>
     <name>FC300X</name>
     <flen>3.6</flen>
-    <imgh>4000</imgh>
-    <imgw>3000</imgw>
-    <senh>4.68</senh>
+    <imgw>4000</imgw>
+    <imgh>3000</imgh>
     <senw>6.28</senw>
+    <senh>4.68</senh>
   </Camera>
   <Camera>
     <name>MavicPro_4kx2160</name>
     <flen>4.7</flen>
-    <imgh>4096</imgh>
-    <imgw>2160</imgw>
-    <senh>6.42</senh>
-    <senw>3.28</senw>
+    <imgw>4096</imgw>
+    <imgh>2160</imgh>
+    <senw>6.42</senw>
+    <senh>3.28</senh>
   </Camera>
 </Cameras>

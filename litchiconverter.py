@@ -9,6 +9,8 @@ import os
 
 template_file = 'template.csv'
 
+dir = "/home/samuel/Documents/"
+
 
 def converter(log_file_name, out_file_name, sensor_h_fov, sensor_v_fov,
               amsl):
@@ -138,7 +140,7 @@ def converter(log_file_name, out_file_name, sensor_h_fov, sensor_v_fov,
         misb_list[PLATFORM_TAIL_NUM] = None
         misb_list[PLAT_HEADING_ANG] = plat_heading_ang
         misb_list[PLAT_PITCH_ANG] = plat_pitch_ang
-        misb_list[PLAT_ROLL_ANG] = 0.0
+        misb_list[PLAT_ROLL_ANG] = plat_roll_ang
         misb_list[PLAT_DESIG] = None
         misb_list[IMG_SOURCE_SENSOR] = None
         misb_list[IMG_COORD] = None
@@ -149,7 +151,7 @@ def converter(log_file_name, out_file_name, sensor_h_fov, sensor_v_fov,
         misb_list[SENSOR_V_FOV] = sensor_v_fov
         misb_list[SENSOR_REL_AZ_ANG] = sensor_rel_az_ang
         misb_list[SENSOR_REL_EL_ANG] = sensor_rel_el_ang
-        misb_list[SENSOR_REL_ROLL_ANG] = None
+        misb_list[SENSOR_REL_ROLL_ANG] = sensor_rel_roll_ang
 
         # If video is active write output to file
         # We only want to record logs for active video to avoid synching issues

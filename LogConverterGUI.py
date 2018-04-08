@@ -257,7 +257,6 @@ class ConvGUI(QMainWindow):
             # When a camera is chosen change the value in our camera variable
             self.camera = text
 
-            # Fear not, I shall describe the mess below:
             # We need the index for the particular camera chosen.
             # We obtain this from our xml_map dictionary:
             # xml_map[camera] maps to index number of that
@@ -352,10 +351,10 @@ class ConvGUI(QMainWindow):
         # Get values from user
         name = self.nameEdit.text()
         flen = self.flenEdit.text()
-        imgw = self.imghEdit.text()
-        imgh = self.imgwEdit.text()
-        senw = self.senhEdit.text()
-        senh = self.senwEdit.text()
+        imgw = self.imgwEdit.text()
+        imgh = self.imghEdit.text()
+        senw = self.senwEdit.text()
+        senh = self.senhEdit.text()
 
         # Create subelement "camera" and then sub elements to that:
         # name, flen, imgw, imagh, senw, senh
@@ -364,14 +363,14 @@ class ConvGUI(QMainWindow):
         xml_name.text = name
         xml_flen = etree.SubElement(Camera, 'flen')
         xml_flen.text = flen
-        xml_imgh = etree.SubElement(Camera, 'imgh')
-        xml_imgh.text = imgh
         xml_imgw = etree.SubElement(Camera, 'imgw')
         xml_imgw.text = imgw
-        xml_senh = etree.SubElement(Camera, 'senh')
-        xml_senh.text = senh
+        xml_imgh = etree.SubElement(Camera, 'imgh')
+        xml_imgh.text = imgh
         xml_senw = etree.SubElement(Camera, 'senw')
         xml_senw.text = senw
+        xml_senh = etree.SubElement(Camera, 'senh')
+        xml_senh.text = senh
 
         # Overwrite camera profile file
         self.xml_tree.write('cameras.xml', pretty_print=True)
@@ -395,8 +394,8 @@ class ConvGUI(QMainWindow):
 
         else:
             fov_values = fov.fov(self.flen, self.sensorw, self.sensorh)
-            fov_w = fov_values[0]
-            fov_h = fov_values[1]
+            fov_horizontal = fov_values[0]
+            fov_vertical = fov_values[1]
 
             amsl = self.amslInput.text()
 
@@ -408,8 +407,8 @@ class ConvGUI(QMainWindow):
 
             if (self.log == 'Litchi'):
                 self.converted = litchiconverter.converter(
-                    self.log_file, self.save_location, fov_w,
-                    fov_h, amsl)
+                    self.log_file, self.save_location, fov_horizontal,
+                    fov_vertical, amsl)
                 if(self.converted):
                     QMessageBox.information(self, 'Message', 'Log converted!')
                 else:
