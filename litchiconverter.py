@@ -71,7 +71,7 @@ def converter(log_file_name, out_file_name, sensor_h_fov, sensor_v_fov,
     out_file = open(out_file_name, 'r+')
 
     # Create list of Litchi header names
-    header_list = log_file.readline().split(',')
+-    header_list = [item.strip() for item in log_file.readline().split(",")]
 
     # Look through header list for headers in our name map dictionary
     for header in header_list:
@@ -89,8 +89,7 @@ def converter(log_file_name, out_file_name, sensor_h_fov, sensor_v_fov,
     # Iterate through Litchi log file
     for line in log_file:
         # Split line by commas
-        line_list = line.split(',')
-
+        line_list = [item.strip() for item in line.split(',')]
         # Get isTakingVideo value
         record = int(line_list[misb_positions['Record Status']])
 

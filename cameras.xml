@@ -31,4 +31,36 @@
     <senw>6.42</senw>
     <senh>3.28</senh>
   </Camera>
+  <Camera>
+    <name>MavicPro_Eyal_ACUASI</name>
+    <flen>4.73</flen>
+    <imgw>4096</imgw>
+    <imgh>2160</imgh>
+    <senw>5.8</senw>
+    <senh>3.4</senh>
+  </Camera>
+  <Camera>
+    <name>Phantom4_advance_Rocky</name>
+    <flen>8.8</flen>
+    <imgw>1920</imgw>
+    <imgh>1080</imgh>
+    <senw>13.1</senw>
+    <senh>6.6</senh>
+  </Camera>
+  <Camera>
+    <name>FLIR_duo_pro_r_visible</name>
+    <flen>8</flen>
+    <imgw>4000</imgw>
+    <imgh>3000</imgh>
+    <senw>11.2</senw>
+    <senh>8.4</senh>
+  </Camera>
+  <Camera>
+    <name>FLIR_duo_pro_r_thermal</name>
+    <flen>19</flen>
+    <imgw>640</imgw>
+    <imgh>512</imgh>
+    <senw>10.88</senw>
+    <senh>8.704</senh>
+  </Camera>
 </Cameras>
