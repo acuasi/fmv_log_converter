@@ -71,7 +71,7 @@ def converter(log_file_name, out_file_name, sensor_h_fov, sensor_v_fov,
     out_file = open(out_file_name, 'r+')
 
     # Create list of Litchi header names
--    header_list = [item.strip() for item in log_file.readline().split(",")]
+    header_list = [item.strip() for item in log_file.readline().split(",")]
 
     # Look through header list for headers in our name map dictionary
     for header in header_list:
