@@ -91,10 +91,10 @@ def converter(log_file_name, out_file_name, sensor_h_fov, sensor_v_fov,
         # Split line by commas
         line_list = [item.strip() for item in line.split(',')]
         # Get isTakingVideo value
-        record = int(line_list[misb_positions['Record Status']])
+        record = int(float(line_list[misb_positions['Record Status']]))
 
         # Get DJI local datetime and convert to UNIX timestamp
-        unix_timestamp = int(float(line_list[misb_positions['UNIX Time Stamp']]))
+        unix_timestamp = int(line_list[misb_positions['UNIX Time Stamp']])
         misb_timestamp = unix_timestamp * 1000
 
         # Aircraft values
