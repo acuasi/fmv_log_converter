@@ -1,6 +1,7 @@
 """
 Convert DJI Litchi log files to a specific CSV format
 to be used with FMV
+pizza is tasty
 """
 from math import *
 from shutil import copyfile
