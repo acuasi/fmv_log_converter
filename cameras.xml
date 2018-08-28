@@ -50,10 +50,10 @@
   <Camera>
     <name>FLIR_duo_pro_r_visible</name>
     <flen>8</flen>
-    <imgw>4000</imgw>
-    <imgh>3000</imgh>
-    <senw>11.2</senw>
-    <senh>8.4</senh>
+    <imgw>1980</imgw>
+    <imgh>1020</imgh>
+    <senw>5.376</senw>
+    <senh>3.024</senh>
   </Camera>
   <Camera>
     <name>FLIR_duo_pro_r_thermal</name>
