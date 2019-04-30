@@ -63,4 +63,12 @@
     <senw>10.88</senw>
     <senh>8.704</senh>
   </Camera>
+  <Camera>
+    <name>Phantom_Pro_4</name>
+    <flen>9</flen>
+    <imgw>4096</imgw>
+    <imgh>2160</imgh>
+    <senw>15.86</senw>
+    <senh>13.20</senh>
+  </Camera>
 </Cameras>
