@@ -130,7 +130,7 @@ def converter(log_file_name, out_file_name, sensor_h_fov, sensor_v_fov,
         sensor_rel_az_ang = sensor_heading - plat_heading_ang
         # sensor_rel_az_ang = plat_heading_ang - sensor_heading
         sensor_rel_roll_ang = plat_roll_ang - sensor_roll_ang
-        sensor_rel_el_ang = sensor_pitch_ang - plat_pitch_ang
+        sensor_rel_el_ang = sensor_pitch_ang# - plat_pitch_ang
 
         if sensor_rel_az_ang < 0:
             sensor_rel_az_ang += 360
