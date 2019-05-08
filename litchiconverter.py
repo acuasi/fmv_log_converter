@@ -104,7 +104,7 @@ def converter(log_file_name, out_file_name, sensor_h_fov, sensor_v_fov,
         sensor_lat = float(line_list[misb_positions['Sensor Latitude']])
         sensor_lon = float(line_list[misb_positions['Sensor Longitude']])
         sensor_true_alt = float(line_list[misb_positions[
-                            'AGL Altitude']])/10 + float(amsl)
+                            'AGL Altitude']])#/10 + float(amsl)
         plat_pitch_ang = float(line_list[misb_positions[
                             'Platform Pitch Angle']])#/10
         plat_roll_ang = float(line_list[misb_positions[
