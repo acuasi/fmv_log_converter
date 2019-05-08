@@ -96,30 +96,33 @@ def converter(log_file_name, out_file_name, sensor_h_fov, sensor_v_fov,
 
         # Get DJI local datetime and convert to UNIX timestamp
         unix_timestamp = int(line_list[misb_positions['UNIX Time Stamp']])
-        misb_timestamp = unix_timestamp * 1000
+        misb_timestamp = unix_timestamp * 1000 #microseconds
 
         # Aircraft values
+        #divide by 10 to convert from raw values to degrees
+        #for new logfile (.DAT) data is in degrees and so not need to /10
         sensor_lat = float(line_list[misb_positions['Sensor Latitude']])
         sensor_lon = float(line_list[misb_positions['Sensor Longitude']])
         sensor_true_alt = float(line_list[misb_positions[
                             'AGL Altitude']])/10 + float(amsl)
         plat_pitch_ang = float(line_list[misb_positions[
-                            'Platform Pitch Angle']])/10
+                            'Platform Pitch Angle']])#/10
         plat_roll_ang = float(line_list[misb_positions[
-                            'Platform Roll Angle']])/10
+                            'Platform Roll Angle']])#/10
         plat_heading_ang = float(line_list[misb_positions[
-                            'Platform Heading Angle']])/10
+                            'Platform Heading Angle']])#/10
         # Convert from (-180,180) to (0,360)
         if plat_heading_ang < 0:
             plat_heading_ang += 360
 
         # Gimbal values, divide by 10 to convert from raw values to degrees
+        #for new logfile (.DAT) data is in degrees and so not need to /10
         sensor_pitch_ang = float(line_list[misb_positions[
-                            'Sensor Elevation Angle']])/10
+                            'Sensor Elevation Angle']])#/10
         sensor_roll_ang = float(line_list[misb_positions[
-                                'Sensor Roll Angle']])/10
+                                'Sensor Roll Angle']])#/10
         sensor_heading = float(line_list[misb_positions[
-                                'Sensor Azimuth Angle']])/10
+                                'Sensor Azimuth Angle']])#/10
         # Convert from (-180,180) to (0,360)
         if sensor_heading < 0:
             sensor_heading += 360
